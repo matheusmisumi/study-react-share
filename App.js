@@ -19,13 +19,8 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <TouchableHighlight style={styles.button} onPress={this.ShareMessage}>
-          <Text> Touch Here </Text>
+          <Text> Share text here </Text>
         </TouchableHighlight>
-        <View style={[styles.countContainer]}>
-          <Text style={[styles.countText]}>
-            {this.state.count !== 0 ? this.state.count : null}
-          </Text>
-        </View>
       </View>
     );
   }
